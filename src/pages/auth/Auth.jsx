@@ -66,7 +66,9 @@ function Auth() {
               style={{ borderRadius: "15px;" }}
             >
               <div className="card-body p-4 p-md-5">
-                <h2 className="mb-4 pb-1 pb-md-0 mb-md-5">{showLogin?"Signup" : "Login"}</h2>
+                <h2 className="mb-4 pb-1 pb-md-0 mb-md-5">
+                  {showLogin ? "Signup" : "Login"}
+                </h2>
                 <form>
                   {showLogin && (
                     <div className="row">
@@ -241,7 +243,11 @@ function Auth() {
                     className="text-primary"
                     onClick={() => setShowLogin(!showLogin)}
                   >
-                    <ins>Already have an account login?</ins>
+                    <ins>
+                      {showLogin
+                        ? "Already have an account ? Login"
+                        : "Not have an Account ? Signup"}
+                    </ins>
                   </h5>
                   <h4
                     className={`text-center ${
