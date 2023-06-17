@@ -66,7 +66,7 @@ function Auth() {
               style={{ borderRadius: "15px;" }}
             >
               <div className="card-body p-4 p-md-5">
-                <h2 className="mb-4 pb-1 pb-md-0 mb-md-5">Signup</h2>
+                <h2 className="mb-4 pb-1 pb-md-0 mb-md-5">{showLogin?"Signup" : "Login"}</h2>
                 <form>
                   {showLogin && (
                     <div className="row">
